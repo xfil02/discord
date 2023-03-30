@@ -1,0 +1,489 @@
+/* adjust resolution */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.container {
+  height: 100%;
+  position: relative;
+}
+
+/* header */
+
+header {
+  background-color: #404eed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 70px;
+  padding: 0 50px;
+  height: 70px;
+}
+
+header img {
+  height: 30px;
+}
+
+.logo {
+  width: 100px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 12px 12px;
+  margin: 12px -5px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+#desktop-nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  width: 60%;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 19%;
+
+/* end header */
+
+}
+/* Buttons */
+
+.button {
+  width: 65px;
+  height: 38px;
+  border-radius: 40px;
+  text-align: center;
+  box-sizing: border-box;
+  border: none;
+}
+
+.login_button {
+  background-color: white;
+  color: black;
+  padding: 0;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.login_button:hover {
+  text-decoration: none;
+  color: blue;
+  box-shadow: -1px 8px 15px rgb(0 0 0 / 20%);
+  box-sizing: border-box;
+}
+
+.login_button a {
+  text-decoration: none;
+}
+.download_button {
+  width: 293px;
+  height: 56px;
+  color: black;
+  background-color: white;
+  font-size: 20px;
+  border: none;
+}
+
+.download_button:hover {
+  color: #5865f2;
+}
+i {
+  font-size: 24px 24px;
+  margin: 0 8px 0 0;
+}
+.open_button {
+  width: 317px;
+  height: 56px;
+  color: white;
+  background-color: #23272a;
+  font-size: 20px;
+  border: none;
+}
+.open_button:hover {
+  color: white;
+  box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
+  background-color: hsl(220, calc(var(1) * 7.7%), 22.9%);
+}
+.button_div {
+  width: 780px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 75px 90px 75px;
+}
+.last {
+  background-color: #5865f2;
+  color: white;
+  margin: 35px 0;
+}
+.last:hover {
+  color: white;
+  cursor: pointer;
+  background-color: hsl(235, calc(var(--saturation-factor, 1) * 86.1%), 71.8%);
+  box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
+}
+
+.register_button {
+  font-size: 14px;
+  width: 90px;
+  height: 38px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.register_button:hover {
+  background-color: hsl(235, calc(var(1) * 86.1%), 71.8%);
+  box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
+}
+
+/* Main */
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* colorated backgroung */
+.div_supremo {
+  background-image: url(../images/sfondo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+ /* main's div h1 p  generic instruction  */
+
+main div {
+  width: 780px;
+  height: 190px;
+  align-self: center;
+}
+main h1 {
+  display: flex;
+  height: 40px;
+  justify-content: center;
+}
+
+/* first couple text image */
+
+.primo_div {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.primo_div h1 {
+  height: 65px;
+  font-size: 68px;
+  font-family: "Lilita One", "cursive";
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+}
+.primo_div p {
+  font-size: 20px;
+  text-align: center;
+  font-size: clamp(16px, 2vw, 20px);
+  align-self: center;
+  color: white;
+}
+
+.info img {
+  width: 646px;
+  height: 419px;
+  margin-right: 70px;
+  margin-left: 149px;
+}
+
+.info_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 373px;
+  height: 433px;
+  padding-left: 200px;
+}
+
+.info h2 {
+  width: 373px;
+  height: 172px;
+  align-self: center;
+  text-align: left;
+  font-size: 40px;
+  font-weight: 900;
+  color: #23272a;
+  padding-top: 20px;
+}
+
+.info p {
+  color: #23272a;
+  width: 373px;
+  height: 130px;
+  font-size: 18px;
+  line-height: 35px;
+  padding-bottom: 180px;
+}
+
+.info {
+  display: flex;
+  width: 100%;
+  height: 680px;
+  padding: 140px 40px;
+}
+/* end first couple text image */
+
+
+/* second couple img text */
+.info2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  padding: 0;
+}
+
+.info2 img {
+  margin-left: 280px;
+}
+
+.info2 h2 {
+  margin-bottom: -80px;
+}
+
+.info3 h2 {
+  margin-bottom: -80px;
+}
+
+/* end second couple img text */
+
+/* third couple img text */
+
+.info_finale {
+  width: 100%;
+  height: 1058px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+}
+
+.section_finale h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family: "Lilita One", "cursive";
+  font-weight: bold;
+  color: #23272a;
+}
+
+.section_finale p {
+  text-align: center;
+  color: #23272a;
+  height: 70px;
+  font-size: 20px;
+  margin: 24px 0 0;
+  line-height: 35px;
+  align-self: center;
+}
+
+.info_finale img {
+  width: 1180px;
+  height: 715px;
+}
+
+/* end third couple img text */
+
+/* fourth couple img text */
+
+.ultimo_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #f6f6f6;
+  margin-bottom: -25px;
+}
+.ultimo_div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.ultimo_div img {
+  width: 531px;
+  height: 49px;
+  margin-bottom: -40px;
+}
+
+.ultimo_div h4 {
+  font-size: 32px;
+  margin: 30px 0 0;
+}
+.ultimo_div i {
+  font-size: 18px;
+}
+/* fourth couple img text */
+
+/* end  main */
+
+/* footer */
+
+.footer_container {
+  padding: 80px 0 64px;
+  width: 100%;
+  height: 543px;
+  background-color: #23272a;
+  position: relative;
+}
+
+.footer_div {
+  width: 100%;
+  height: 328px;
+  padding: 0 140px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.logo_footer {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 32px 140px;
+  background-color: #23272a;
+}
+.logo_footer img {
+  width: 122px;
+  height: 28px;
+}
+.footer_social {
+  width: 280px;
+  height: 272px;
+  margin: 0;
+}
+
+.footer_social h4 {
+  font-size: 38px;
+  font-family: "Lilita One", "cursive";
+  font-weight: bold;
+  color: #5865f2;
+}
+.footer_social h6 {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  padding-bottom: 12px;
+}
+.bandierina {
+  width: 250px;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 130px;
+}
+.flag {
+  width: 40px;
+  height: 24px;
+  margin-right: 20px;
+}
+#lingue {
+  color: #fff;
+  background-color: #23272a;
+  border: none;
+}
+.lingua {
+  margin: 0 5px;
+  width: 200px;
+  height: 30px;
+  background-color: #404eed;
+  color: white;
+  font-size: 18px;
+}
+.icone_social {
+  width: 150px;
+  color: white;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  font-size: 21px;
+  justify-content: space-between;
+}
+.icone_social a {
+  color: white;
+}
+hr {
+  border-color: #5865f2;
+  margin: 0 140px;
+}
+.prodotto {
+  width: 138px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-start;
+  margin-top: 15px;
+  margin-left: 20px;
+  padding: 20px;
+}
+li {
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  margin-top: 12px;
+}
+li a {
+  color: white;
+  text-decoration: none;
+}
+li a:hover {
+  text-decoration: underline;
+}
+.prodotto h5 {
+  color: #5865f2;
+  font-size: 16px;
+}
+.compagnia {
+  height: 180px;
+}
+.risorse {
+  height: 230px;
+}
+/* end footer */
